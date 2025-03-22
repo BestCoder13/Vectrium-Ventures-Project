@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #000;
+}
+
+.nav-link{
+  padding: 1.5px 12px;
+}
+
+.nav-link:hover{
+  cursor:pointer;
+  background-color: rgb(49, 48, 48);
+  color: rgb(226, 215, 215);
+  border-radius: 50px;
+}
+
+.dark-light:hover{
+  border-radius: 20px;
+  padding: 2px;
+}
