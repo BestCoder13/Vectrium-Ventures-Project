@@ -3,6 +3,7 @@ import TrustedBrands from "./TrustedBrands";
 import bg from "../assets/bg.avif";
 import Oursolution from "./Oursolution";
 import CallNow from "./CallNow";
+import Services from "./Services";
 
 const Home = () => {
   const handleRedirect = () => {
@@ -11,7 +12,7 @@ const Home = () => {
 
   const animationStyle = {
     animation: "slideFromTop 1s ease-out forwards",
-    opacity: 0, 
+    opacity: 0,
   };
 
   return (
@@ -20,7 +21,7 @@ const Home = () => {
         {`
           @keyframes slideFromTop {
             0% {
-              opacity: 0;
+              opacity: 1;
               transform: translateY(-50px);
             }
             100% {
@@ -35,9 +36,8 @@ const Home = () => {
         className="w-full min-h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="flex flex-col pl-45 pt-60 justify-left h-full bg-black/50 min-h-screen text-white p-6">
-=
-          <h1 className="text-5xl font-bold w-[35vw] text-left" style={animationStyle}>
+        <div className="flex flex-col items-center lg:items-start lg:pl-45 pt-20 lg:pt-60 justify-center h-full bg-black/50 min-h-screen text-white p-6 text-center lg:text-left">
+          <h1 className="text-3xl lg:text-5xl font-bold w-full lg:w-[35vw]" style={animationStyle}>
             Empowering Your{" "}
             <span className="text-blue-400">
               Digital Journey <br />
@@ -45,7 +45,7 @@ const Home = () => {
             with Innovative IT Solutions
           </h1>
 
-          <p className="mt-4 text-lg w-[35vw] text-left" style={animationStyle}>
+          <p className="mt-4 text-md lg:text-lg w-full lg:w-[35vw]" style={animationStyle}>
             Vectrium Ventures delivers tailored IT solutions that elevate your brand and streamline your digital
             operations. <br />
             Our expert team specializes in driving innovation <br />
@@ -67,6 +67,7 @@ const Home = () => {
       <TrustedBrands />
       <Oursolution />
       <CallNow />
+      <Services />
     </div>
   );
 };

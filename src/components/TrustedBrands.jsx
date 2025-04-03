@@ -15,25 +15,26 @@ import thrive from '../assets/thrive.png'
 const TrustedBrands = () => {
   return (
     <div className='py-4 sm:py-8'>
-    <h1 className='text-gray-200 mt-10 font-bold mb-6 text-2xl text-center'>Trusted by Leading Brands</h1>
-    <div className='flex justify-between ml-10 mr-10 h-30 mb-10'>
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={kindle} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={donnelly} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={imation} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={glycon} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={kantar} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={lesechos} alt="" />
-    </div>
-    <div className='flex justify-between ml-10 mr-10 mb-10 h-30'>
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={franchise} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={altron} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={fedex} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={aspiringminds} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={grow} alt="" />
-        <img className='w-[14vw] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={thrive} alt="" />
-    </div>
-</div>
+      <h1 className='text-gray-200 mt-10 font-bold mb-6 text-2xl text-center'>Trusted by Leading Brands</h1>
+     
+      <div className='flex flex-wrap justify-between ml-10 mr-10 mb-10'>
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={kindle} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={donnelly} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={imation} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={glycon} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={kantar} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={lesechos} alt="" />
+      </div>
 
+      <div className='flex flex-wrap justify-between ml-10 mr-10 mb-10'>
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={franchise} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={altron} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={fedex} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={aspiringminds} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={grow} alt="" />
+        <img className='w-[12vw] sm:w-[14vw] sm:h-[20vh] hover:scale-105 rounded hover:shadow-emerald-50 hover:shadow-lg' src={thrive} alt="" />
+      </div>
+    </div>
   )
 }
 
