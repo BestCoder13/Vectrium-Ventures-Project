@@ -4,6 +4,7 @@ import bg from "../assets/bg.avif";
 import Oursolution from "./Oursolution";
 import CallNow from "./CallNow";
 import Services from "./Services";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   const handleRedirect = () => {

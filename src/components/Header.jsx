@@ -19,7 +19,7 @@ const Header = () => {
         </svg>
       </button>
 
-      <ul className={`lg:flex space-x-8 text-gray-400 items-center text-sm ${menuOpen ? 'flex flex-col items-center justify-center absolute top-16 left-0 bg-black w-full py-6 space-y-4' : 'hidden'} lg:block`}>
+      <ul className={`lg:flex  space-x-8 text-gray-400 items-center text-sm ${menuOpen ? 'flex flex-col items-center justify-center absolute top-16 left-0 bg-black w-full py-6 space-y-4' : 'hidden'} lg:block`}>
         {['Home', 'Services', 'About Us', 'Career', 'Contact Us'].map((link, index) => (
           <li key={index} className='nav-link'>
             <Link to={`/${link.toLowerCase().replace(' ', '')}`} onClick={() => setMenuOpen(false)}>{link}</Link>

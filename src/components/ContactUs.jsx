@@ -30,10 +30,11 @@ const ContactUs = () => {
     <div className="min-h-screen flex justify-center items-center bg-gray-900 p-6 pt-20">
       <div className="w-full max-w-md p-6 bg-gray-800 text-white rounded-lg shadow-lg">
         <div className="mb-6">
-          <div className="flex items-center justify-center ">
-            <img className="h-12 mx-auto mb-3" src={logo} alt="Vectrium Ventures" />
-            <h1 className="text-2xl font-bold">Vectrium Ventures</h1>
-          </div>
+          <div className="flex items-center justify-center md:justify-start">
+  <img className="h-12 mb-3 md:ml-15  md:mb-0 md:mr-3" src={logo} alt="Vectrium Ventures" />
+  <h1 className="text-2xl font-bold">Vectrium Ventures</h1>
+</div>
+
           <h1 className="text-3xl font-bold">Let's Get In Touch.</h1>
           <p className="text-gray-400 text-sm">Or just reach out manually to <span className="text-indigo-400">contact@vectriumventures.in</span></p>
         </div>
