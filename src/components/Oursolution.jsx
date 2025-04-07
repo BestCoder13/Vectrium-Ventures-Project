@@ -29,7 +29,7 @@ const Oursolution = () => {
   return (
     <div
       ref={solutionRef}
-      className="text-white flex flex-col md:flex-row items-center gap-6 p-6 md:p-8 rounded-2xl shadow-lg w-full max-w-6xl mx-auto"
+      className="text-white flex flex-col md:flex-row items-center gap-6 p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg w-full max-w-6xl mx-auto"
     >
       <style>
         {`
@@ -44,12 +44,10 @@ const Oursolution = () => {
         `}
       </style>
 
-      <div
-        className={`left w-full md:w-1/2 flex justify-center transition-all duration-500 ease-in-out`}
-      >
+      <div className="left w-full md:w-1/2 flex justify-center transition-all duration-500 ease-in-out">
         <img
           src={solution}
-          className="rounded-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transform transition-transform duration-500 hover:scale-105"
+          className="rounded-xl w-[90%] sm:w-[80%] md:w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transform transition-transform duration-500 hover:scale-105"
           style={{
             animation: animate ? "enlargeOnLoad 0.8s ease-out forwards 0.5s" : "none",
           }}
