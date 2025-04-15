@@ -18,11 +18,11 @@ const Header = () => {
   ];
 
   return (
-    <div className='fixed w-full z-10 header bg-[#0a0a0a] h-16 flex justify-between items-center px-10 lg:px-20 border-b border-white/10'>
+    <div className='fixed w-full z-10 header bg-[#0a0a0a] h-16 flex justify-between items-center px-4 sm:px-6 md:px-10 lg:px-20 border-b border-white/10'>
 
       <Link to="/" className='flex items-center'>
-        <img className='h-16' src={logo} alt="Logo" />
-        <h1 className='text-white text-xl ml-2 font-medium'>Vectrium Ventures</h1>
+        <img className='h-14 sm:h-16' src={logo} alt="Logo" />
+        <h1 className='text-white text-base sm:text-lg md:text-xl ml-2 font-medium'>Vectrium Ventures</h1>
       </Link>
 
       <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-neutral-300">
@@ -47,8 +47,16 @@ const Header = () => {
             </Link>
           </li>
         ))}
+
+        {/* Call Now button in mobile view */}
+        <li className='lg:hidden'>
+          <button onClick={() => { setMenuOpen(false); handleRedirect(); }} className='bg-white/10 text-white text-sm font-medium hover:bg-white/20 px-4 py-2 rounded transition'>
+            Call Now
+          </button>
+        </li>
       </ul>
 
+      {/* Desktop button */}
       <div className="hidden lg:block">
         <button onClick={handleRedirect} className='bg-white/10 text-white text-sm font-medium hover:bg-white/20 px-4 py-2 rounded transition'>
           Call Now
