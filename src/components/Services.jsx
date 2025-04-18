@@ -1,64 +1,69 @@
-import React from 'react';
+import React from 'react'
+import ServiceHome from './ServiceHome.jsx'
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Servicesnumber from './Servicesnumber';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 const Services = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: 'ease-in-out',
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
+    
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 3.5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      cssEase: 'ease-in-out',
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
         },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    };
+  
+    const services = [
+      {
+        title: 'Graphics Design',
+        description:
+          'Graphic designing is at the heart of building a strong brand identity. Our services include logo creation, branding materials, marketing collateral, and digital graphics.',
+        icon: (
+          <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M3 3h18v18H3V3zM8 8h8M8 12h4m-4 4h8'></path></svg>
+        ),
       },
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
+        title: 'SEO and Content Writing',
+        description:
+          'SEO and content writing are critical for enhancing your website’s visibility and attracting the right audience.',
+        icon: (
+          <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M4 4h16v16H4V4zM8 8h8M8 12h4m-4 4h8'></path></svg>
+        ),
       },
-    ],
-  };
-
-  const services = [
-    {
-      title: 'Graphics Design',
-      description:
-        'Graphic designing is at the heart of building a strong brand identity. Our services include logo creation, branding materials, marketing collateral, and digital graphics.',
-      icon: (
-        <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M3 3h18v18H3V3zM8 8h8M8 12h4m-4 4h8'></path></svg>
-      ),
-    },
-    {
-      title: 'SEO and Content Writing',
-      description:
-        'SEO and content writing are critical for enhancing your website’s visibility and attracting the right audience.',
-      icon: (
-        <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M4 4h16v16H4V4zM8 8h8M8 12h4m-4 4h8'></path></svg>
-      ),
-    },
-    {
-      title: 'Website Development',
-      description:
-        'Our website development service focuses on creating dynamic and interactive websites that are functional and user-friendly.',
-      icon: (
-        <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M3 3h18v18H3V3zM9 9h6m-6 4h6m-6 4h6'></path></svg>
-      ),
-    },
-  ];
-
+      {
+        title: 'Website Development',
+        description:
+          'Our website development service focuses on creating dynamic and interactive websites that are functional and user-friendly.',
+        icon: (
+          <svg className='w-16 h-16 text-blue-500' fill='none' stroke='currentColor' strokeWidth='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path strokeLinecap='round' strokeLinejoin='round' d='M3 3h18v18H3V3zM9 9h6m-6 4h6m-6 4h6'></path></svg>
+        ),
+      },
+    ];
   return (
-    <div className='w-full h-auto p-10 text-white'>
+    <div>
+        <ServiceHome />
+        <div className='w-full h-auto p-10 text-white'>
       <h1 className='text-center font-bold text-4xl mb-10'>Services Offered by Us</h1>
       <div className='w-[90vw] mx-auto'>
         <Slider {...settings}>
@@ -76,7 +81,9 @@ const Services = () => {
         </Slider>
       </div>
     </div>
-  );
-};
+    <Servicesnumber/>
+    </div>
+  )
+}
 
-export default Services;
+export default Services

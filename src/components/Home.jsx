@@ -3,7 +3,7 @@ import TrustedBrands from "./TrustedBrands";
 import bg from "../assets/bg.avif";
 import Oursolution from "./Oursolution";
 import CallNow from "./CallNow";
-import Services from "./Services";
+import Services1 from "./Services1";
 
 const Home = () => {
   const handleRedirect = () => {
@@ -67,7 +67,7 @@ const Home = () => {
       <TrustedBrands />
       <Oursolution />
       <CallNow />
-      <Services />
+      <Services1 />
     </div>
   );
 };

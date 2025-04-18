@@ -31,11 +31,7 @@ const Header = () => {
         </svg>
       </button>
 
-      <ul className={`lg:flex space-x-8 text-sm ${
-        menuOpen
-          ? 'flex flex-col items-center justify-center absolute top-16 left-0 bg-[#0a0a0a] w-full py-6 space-y-4 border-t border-white/10'
-          : 'hidden'
-      } lg:block`}>
+      <ul className={`text-sm lg:flex space-x-8 ${menuOpen ? 'flex flex-col items-center justify-center absolute top-16 left-0 bg-[#0a0a0a] w-full py-6 space-y-4 border-t border-white/10' : 'hidden'} lg:static lg:py-0 lg:space-y-0 lg:space-x-8`}>
         {navLinks.map(({ name, path }, index) => (
           <li key={index} className='nav-link'>
             <Link
@@ -48,7 +44,6 @@ const Header = () => {
           </li>
         ))}
 
-        {/* Call Now button in mobile view */}
         <li className='lg:hidden'>
           <button onClick={() => { setMenuOpen(false); handleRedirect(); }} className='bg-white/10 text-white text-sm font-medium hover:bg-white/20 px-4 py-2 rounded transition'>
             Call Now
@@ -56,7 +51,6 @@ const Header = () => {
         </li>
       </ul>
 
-      {/* Desktop button */}
       <div className="hidden lg:block">
         <button onClick={handleRedirect} className='bg-white/10 text-white text-sm font-medium hover:bg-white/20 px-4 py-2 rounded transition'>
           Call Now
